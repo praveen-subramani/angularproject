@@ -1,0 +1,34 @@
+<p>air works!</p>
+<div routerLink="/fire/water">air to fire</div>
+<router-outlet></router-outlet>
+<mat-checkbox  [(ngModel)]="checked">Checked</mat-checkbox>
+<div>{{checked}}</div>
+
+<mat-checkbox  [(ngModel)]="check">backgroundcolors</mat-checkbox>
+<div>{{check}}</div>
+
+<mat-checkbox  [(ngModel)]="fonsiz">praveen</mat-checkbox>
+<div>{{fonsiz}}</div>
+
+<button [ngStyle]="ff">praveen</button> <br>
+
+
+<mat-radio-group [(ngModel)]="climate">
+<mat-radio-button   [value]="item" *ngFor="let item of seasons">{{item}}  </mat-radio-button>
+
+</mat-radio-group>
+<div>{{climate}}</div>
+
+<div *ngFor="let item of harry.Employees">
+<div>{{item.userId}}</div>
+<div>{{item.jobTitle}}</div>
+<div>{{item.firstName}}</div>
+<div>{{item.emailAddress}}</div>
+<div>{{item.phoneNumber}}</div>
+</div>
+<button (click)="stalin()">hhhhhhhhhhhhhhh</button>
+<div *ngIf="dmk">
+    praveen is better than susmitha
+</div>
+<button (click)="prav()">praveen</button>
+<button (click)="sus()">susmitha</button>
